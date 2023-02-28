@@ -1,11 +1,11 @@
-function Guess() {
+function Guess({ guess = '' }) {
   return (
-    <p class='guess'>
-      <span class='cell'>F</span>
-      <span class='cell'>I</span>
-      <span class='cell'>R</span>
-      <span class='cell'>S</span>
-      <span class='cell'>T</span>
+    <p className='guess'>
+      <span className='cell'>{guess.charAt(0)}</span>
+      <span className='cell'>{guess.charAt(1)}</span>
+      <span className='cell'>{guess.charAt(2)}</span>
+      <span className='cell'>{guess.charAt(3)}</span>
+      <span className='cell'>{guess.charAt(4)}</span>
     </p>
   );
 }
