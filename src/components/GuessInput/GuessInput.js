@@ -11,7 +11,6 @@ function GuessInput() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (guess.length !== 5) return;
     console.log(guess);
     setGuess('');
   };
@@ -24,6 +23,8 @@ function GuessInput() {
         type='text'
         minLength={5}
         maxLength={5}
+        pattern='[a-zA-Z]{5}'
+        title='5 letter word'
         value={guess}
         onChange={onGuessChange}
       />
