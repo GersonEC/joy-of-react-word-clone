@@ -1,7 +1,7 @@
 import React from 'react';
 import Game from '../Game';
 import GuessInput from '../GuessInput/GuessInput';
-import GuessesList from '../GuessesList/GuessesList';
+import GuessResults from '../GuessResults/GuessResults';
 import Header from '../Header';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
 
       <div className='game-wrapper'>
         <Game />
-        <GuessesList guessList={guessList} />
+        <GuessResults guessList={guessList} />
         <GuessInput onGuessSubmit={handleGuessSubmit} />
       </div>
     </div>
