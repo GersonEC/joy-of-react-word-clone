@@ -11,7 +11,6 @@ function GuessInput({ onGuessSubmit, disabled }) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(guess);
     onGuessSubmit(guess);
     setGuess('');
   };
