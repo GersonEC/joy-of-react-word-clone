@@ -146,6 +146,7 @@ h1 {
   flex-direction: column;
   gap: 8px;
   height: 6.75rem;
+  color: white;
 }
 
 .guess-input-wrapper label {
